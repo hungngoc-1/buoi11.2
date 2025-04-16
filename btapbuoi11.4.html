@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xếp loại học sinh</title>
+</head>
+<body>
+    <h2>Nhập điểm trung bình và xếp loại</h2>
+    <script>
+        let diem =  Number (prompt("Nhập điểm trung bình của học sinh (0 - 10):"));
+        if (diem >= 9 && diem <= 10) {
+            document.write("Xếp loại: Xuất sắc");
+        } else if (diem >= 7 && diem < 9) {
+            document.write("Xếp loại: Khá");
+        } else if (diem >= 5 && diem < 7) {
+            document.write("Xếp loại: Trung bình");
+        } else if (diem >= 0 && diem < 5) {
+            document.write("Xếp loại: Yếu");
+        } else {
+            document.write("Điểm không hợp lệ. Vui lòng nhập từ 0 đến 10.");
+        }
+    </script>
+</body>
+</html>
